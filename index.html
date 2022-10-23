@@ -373,7 +373,17 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscription-submit">
+          <h3 class="suscription-title">Підпишіться на розсилку</h3>
+          <input type="subscription" placeholder="E-mail" required class="footer-field-submit footerph" id="user-email"
+            name="subscription">
+          <button type="submit" class="footer-field-btn" id="send-btn">Підписатися<svg class="submit-icon" width="24"
+              height="24">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg></button>
+        </div>
       </div>
+    </div>
     </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
@@ -383,6 +393,40 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <form id="form" action="#" class="modal-form">
+        <h2 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <div class="modal-form-field">
+          <label for="user-name" class="modal-field-name">Ім’я</label>
+          <input type="name" required class="modal-field-input" id="user-name" name="Name">
+          <svg class="input-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-name-input"></use>
+          </svg>
+        </div>
+        <div class="modal-form-field">
+          <label for="user-tel-number" class="modal-field-name">Телефон</label>
+          <input type="tel-number" required class="modal-field-input" id="user-tel-number" name="Tel-number">
+          <svg class="input-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-tel-input"></use>
+          </svg>
+        </div>
+        <div class="modal-form-field">
+          <label for="user-email" class="modal-field-name">Пошта</label>
+          <input type="email" required class="modal-field-input" id="user-email" name="Email">
+          <svg class="input-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-mail-input"></use>
+          </svg>
+        </div>
+        <div class="modal-form-field">
+          <label for="user-coment" class="modal-field-name">Коментар</label>
+          <input type="coment" placeholder="Введіть текст" required class="modal-field-input modalph" id="user-coment"
+            name="Coment">
+        </div>
+        <div class="checkbox-input">
+          <input id="check" type="checkbox" class="chbox">
+          <label for="check" class="check-title">Погоджуюся з розсилкою та приймаю<span>Умови договору</span></label>
+        </div>
+        <button type="submit" class="modal-form-btn" id="send-btn">Відправити</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
