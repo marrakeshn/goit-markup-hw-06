@@ -392,35 +392,38 @@
       </button>
       <form id="form" action="#" class="modal-form">
         <h2 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h2>
-        <div class="modal-form-field">
+        <div class="modal-form-field top-field">
           <label for="user-name" class="modal-field-name">Ім’я</label>
-          <input type="user-name" required class="modal-field-input" id="user-name" name="user-name">
+          <input type="name" required class="modal-field-input" id="user-name" name="Name">
           <svg class="input-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-name-input"></use>
           </svg>
         </div>
         <div class="modal-form-field">
           <label for="user-tel-number" class="modal-field-name">Телефон</label>
-          <input type="user-tel-number" required class="modal-field-input" id="user-tel-number" name="user-tel-number">
+          <input type="tel-number" required class="modal-field-input" id="user-tel-number" name="Tel-number">
           <svg class="input-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-tel-input"></use>
           </svg>
         </div>
         <div class="modal-form-field">
           <label for="user-email" class="modal-field-name">Пошта</label>
-          <input type="user-email" required class="modal-field-input" id="user-email" name="user-email">
+          <input type="email" required class="modal-field-input" id="user-email" name="Email">
           <svg class="input-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-mail-input"></use>
           </svg>
         </div>
         <div class="modal-form-field">
-          <label for="user-coment" class="modal-field-name">Коментар</label>
-          <textarea placeholder="Введіть текст" required class="modal-field-input modalph" id="user-coment"
-            name="user-coment">
+          <label for="user-comment" class="modal-field-name">Коментар</label>
+          <textarea type="comment" placeholder="Введіть текст" required class="modal-field-input comment"
+            id="user-comment" name="Comment"></textarea>
         </div>
-        <div class="checkbox-input">
-          <input id="check" type="checkbox" class="chbox">
-          <label for="check" class="check-title">Погоджуюся з розсилкою та приймаю<span>Умови договору</span></label>
+        <div class="form-field-checkbox">
+          <label class="policy-label" for="policy"></a>
+            <input class="form-checkbox" type="checkbox" name="policy" id="policy">
+            <span class="icon-checkbox"></span>
+            Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору</a>
+          </label>
         </div>
         <button type="submit" class="modal-form-btn" id="send-btn">Відправити</button>
       </form>
