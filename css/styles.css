@@ -9,6 +9,7 @@
     --primary-color: #212121;
     --white-color: #fff;
     --secondary-color: #757575;
+    --btn-active: #188ce8;
     --secondary-font: 'Raleway', normal;
 }
 
@@ -205,14 +206,14 @@ header .logo span {
 
 .order-btn:hover {
     color: var(--white-color);
-    background-color: #188ce8;
+    background-color: var(--btn-active);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
 .order-btn:focus {
     color: var(--white-color);
-    background-color: #188ce8;
+    background-color: var(--btn-active);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
@@ -360,6 +361,8 @@ header .logo span {
 
 .social-icon {
     fill: #AFB1B8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover {
@@ -464,42 +467,54 @@ footer .logo span {
 .footer-field-submit {
     padding: 15px 16px;
     width: 358px;
-    height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    color: var(--white-color);
+    color: rgba(255, 255, 255, 0.6);
     margin-right: 12px;
+    outline: none;
 }
 
-.submit-icon {
-    position: absolute;
-
-    right: 28px;
-    top: 13px;
-    margin-left: 11px;
-    fill: var(--white-color);
+.footer-field-submit::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
 }
+
+
 
 .footer-field-btn {
-
-    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 0;
+    padding: 8px 29px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    color: var(--white-color);
     font-family: 'Roboto';
     font-style: normal;
-    background-color: var(--accent-color);
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.88;
+    line-height: 1.87;
     letter-spacing: 0.06em;
-    color: var(--white-color);
-    padding: 10px 28px 10px 28px;
     cursor: pointer;
+    min-height: 43px;
+    margin-left: 12px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-field-btn::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../images/icon-send.svg);
 }
 
 
@@ -695,6 +710,8 @@ footer .logo span {
 
 .clients-icon {
     fill: #AFB1B8;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover {
@@ -729,8 +746,6 @@ footer .logo span {
     border-radius: 4px;
     background-color: #F5F4FA;
 }
-
-/* MODAL */
 
 .backdrop {
     position: fixed;
@@ -819,8 +834,6 @@ footer .logo span {
     margin-bottom: 4px;
 }
 
-
-
 .modal-field-input {
     box-sizing: border-box;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -837,14 +850,14 @@ footer .logo span {
     border-color: var(--accent-color)
 }
 
-.modalph {
+/* .modalph {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
     height: 120px;
     color: rgba(117, 117, 117, 0.5);
-}
+} */
 
 .modal-form-btn {
     font-family: 'Roboto';
@@ -867,14 +880,14 @@ footer .logo span {
 
 .modal-form-btn:hover {
     color: var(--white-color);
-    background-color: #188ce8;
+    background-color: var(--btn-active);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
 .modal-form-btn:focus {
     color: var(--white-color);
-    background-color: #188ce8;
+    background-color: var(--btn-active);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
