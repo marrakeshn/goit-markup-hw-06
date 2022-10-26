@@ -986,8 +986,6 @@ textarea:focus {
 }
 
 .comment {
-
-
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -996,7 +994,7 @@ textarea:focus {
     color: var(--primary-color);
     width: 100%;
     margin: 0;
-    padding: 12px 15px 12px 42px;
+    padding: 12px 42px 12px 15px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
