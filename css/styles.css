@@ -461,7 +461,7 @@ footer .logo span {
 
 .footer-subscription-submit {
     margin-left: 93px;
-    width: 100%;
+
 }
 
 .footer-field-submit {
@@ -828,6 +828,10 @@ footer .logo span {
     margin-bottom: 10px;
 }
 
+.last {
+    margin-bottom: 0;
+}
+
 .modal-field-name {
     color: var(--secondary-color);
     margin-bottom: 4px;
@@ -864,7 +868,7 @@ footer .logo span {
 }
 
 textarea {
-    min-height: 138px;
+    min-height: 120px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -903,7 +907,7 @@ textarea:focus {
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--white-color);
-    padding: 10px 32px 10px 32px;
+    padding: 10px 52px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -926,8 +930,9 @@ textarea:focus {
 
 .form-field-checkbox {
     padding-left: 14px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: 30px;
+
 }
 
 .form-checkbox:checked+.icon-checkbox {
